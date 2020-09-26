@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cat Tax Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- TODO: Import Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- TODO: Create main.css and link it  -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cat Tax Calculator</h1>
+    <p>
+      Paying your cat taxes is a lot easier than paying your income taxes.
+      Just click the button below to calculate your tax.
+    </p>
+    <!-- TODO: Add button that calculates your cat tax amount -->
+    <!-- TODO: Call calcButtonClick function when this button is clicked -->
+    <!-- TODO: Style this button as a primary button with bootstrap -->
+    <button onclick="calcButtonClick()" class="calculateBtn">
+      Calculate My Cat Tax
+    </button>
+
+    <p id="amountOwed"></p>
+    <!-- TODO: Add button that lets you pay your cat tax -->
+    <!-- TODO: Call payButton function when this button is clicked -->
+    <!-- TODO: Style this button as a success button with bootstrap -->
+    <!-- TODO: This button should not show unless a tax amount has been calculated -->
+    <button onclick="payButton()" class="payBtn" hidden></button>
+    <div class="imageContainer"></div>
+  </div>
+</body>
+<!-- TODO: Import Bootstrap JS and jQuery CSS via CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- TODO: Import main.js file -->
+<script src="./main.js"></script>
+
+</html>

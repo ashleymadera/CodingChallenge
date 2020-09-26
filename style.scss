@@ -1,0 +1,28 @@
+@mixin btnDetails($background, $color) {
+  background-color: $background;
+  border: none;
+  border-radius: 5px;
+  border-color: $color;
+  color: #fff;
+  height: 40px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calculateBtn{
+@include btnDetails(#007bff,#007bff )
+}
+.payBtn{
+  @include btnDetails(#28a745,#28a745)
+}
+img{
+  height: 200px;
+  width: 200px;
+}
